@@ -2,11 +2,11 @@
 <sch:PageDefinition xmlns:sch="http://Baf.com/schemas" name="Navigation Tree">
     <sch:name>Navigation Tree</sch:name>
     <sch:pageNumber></sch:pageNumber>
-    <sch:pageType>Summary</sch:pageType>
+    <sch:pageType>Detail</sch:pageType>
     <sch:pageCondition></sch:pageCondition>
     <sch:title></sch:title>
     <sch:seqNumber>0</sch:seqNumber>
-    <sch:objectTypeName></sch:objectTypeName>
+    <sch:objectTypeName>BaseManagement</sch:objectTypeName>
     <sch:display>false</sch:display>
     <sch:labelColWidth>0</sch:labelColWidth>
     <sch:valueColWidth>0</sch:valueColWidth>
@@ -32,18 +32,8 @@
         <sch:BmfTreeNode>
             <sch:tableName>BaseManagement</sch:tableName>
             <sch:type>Item</sch:type>
-            <sch:seqIndex>100</sch:seqIndex>
-            <sch:format>%s</sch:format>
-            <sch:columns>Name</sch:columns>
-            <sch:action></sch:action>
-            <sch:quoteDisplay>true</sch:quoteDisplay>
-            <sch:description></sch:description>
-        </sch:BmfTreeNode>
-        <sch:BmfTreeNode>
-            <sch:tableName>Vehicle</sch:tableName>
-            <sch:type>Collection</sch:type>
-            <sch:seqIndex>200</sch:seqIndex>
-            <sch:format>车辆管理(*)</sch:format>
+            <sch:seqIndex>0</sch:seqIndex>
+            <sch:format>BaseManagement</sch:format>
             <sch:columns></sch:columns>
             <sch:action></sch:action>
             <sch:quoteDisplay>true</sch:quoteDisplay>
@@ -51,10 +41,20 @@
         </sch:BmfTreeNode>
         <sch:BmfTreeNode>
             <sch:tableName>Vehicle</sch:tableName>
+            <sch:type>Collection</sch:type>
+            <sch:seqIndex>0</sch:seqIndex>
+            <sch:format>Vehicles(%s)</sch:format>
+            <sch:columns>#count</sch:columns>
+            <sch:action></sch:action>
+            <sch:quoteDisplay>true</sch:quoteDisplay>
+            <sch:description></sch:description>
+        </sch:BmfTreeNode>
+        <sch:BmfTreeNode>
+            <sch:tableName>Vehicle</sch:tableName>
             <sch:type>Item</sch:type>
-            <sch:seqIndex>200</sch:seqIndex>
-            <sch:format>%s %s</sch:format>
-            <sch:columns>LicenseNo,EngineNo</sch:columns>
+            <sch:seqIndex>0</sch:seqIndex>
+            <sch:format>Vehicle[%s]</sch:format>
+            <sch:columns>Oid</sch:columns>
             <sch:action></sch:action>
             <sch:quoteDisplay>false</sch:quoteDisplay>
             <sch:description></sch:description>
@@ -62,9 +62,9 @@
         <sch:BmfTreeNode>
             <sch:tableName>VehicleMake</sch:tableName>
             <sch:type>Collection</sch:type>
-            <sch:seqIndex>300</sch:seqIndex>
-            <sch:format>厂牌管理(*)</sch:format>
-            <sch:columns></sch:columns>
+            <sch:seqIndex>0</sch:seqIndex>
+            <sch:format>VehicleMakes(%s)</sch:format>
+            <sch:columns>#count</sch:columns>
             <sch:action></sch:action>
             <sch:quoteDisplay>true</sch:quoteDisplay>
             <sch:description></sch:description>
@@ -72,9 +72,9 @@
         <sch:BmfTreeNode>
             <sch:tableName>VehicleMake</sch:tableName>
             <sch:type>Item</sch:type>
-            <sch:seqIndex>300</sch:seqIndex>
-            <sch:format>%s</sch:format>
-            <sch:columns>VehicleMakeName</sch:columns>
+            <sch:seqIndex>0</sch:seqIndex>
+            <sch:format>VehicleMake[%s]</sch:format>
+            <sch:columns>Oid</sch:columns>
             <sch:action></sch:action>
             <sch:quoteDisplay>false</sch:quoteDisplay>
             <sch:description></sch:description>
@@ -82,9 +82,9 @@
         <sch:BmfTreeNode>
             <sch:tableName>VehicleModel</sch:tableName>
             <sch:type>Collection</sch:type>
-            <sch:seqIndex>400</sch:seqIndex>
-            <sch:format>车型管理(*)</sch:format>
-            <sch:columns></sch:columns>
+            <sch:seqIndex>0</sch:seqIndex>
+            <sch:format>VehicleModels(%s)</sch:format>
+            <sch:columns>#count</sch:columns>
             <sch:action></sch:action>
             <sch:quoteDisplay>true</sch:quoteDisplay>
             <sch:description></sch:description>
@@ -92,9 +92,29 @@
         <sch:BmfTreeNode>
             <sch:tableName>VehicleModel</sch:tableName>
             <sch:type>Item</sch:type>
-            <sch:seqIndex>400</sch:seqIndex>
-            <sch:format>%s</sch:format>
-            <sch:columns>VMName</sch:columns>
+            <sch:seqIndex>0</sch:seqIndex>
+            <sch:format>VehicleModel[%s]</sch:format>
+            <sch:columns>Oid</sch:columns>
+            <sch:action></sch:action>
+            <sch:quoteDisplay>false</sch:quoteDisplay>
+            <sch:description></sch:description>
+        </sch:BmfTreeNode>
+        <sch:BmfTreeNode>
+            <sch:tableName>BaseAdminActivity</sch:tableName>
+            <sch:type>Collection</sch:type>
+            <sch:seqIndex>0</sch:seqIndex>
+            <sch:format>BaseAdminActivities(%s)</sch:format>
+            <sch:columns>#count</sch:columns>
+            <sch:action></sch:action>
+            <sch:quoteDisplay>true</sch:quoteDisplay>
+            <sch:description></sch:description>
+        </sch:BmfTreeNode>
+        <sch:BmfTreeNode>
+            <sch:tableName>BaseAdminActivity</sch:tableName>
+            <sch:type>Item</sch:type>
+            <sch:seqIndex>0</sch:seqIndex>
+            <sch:format>BaseAdminActivity[%s]</sch:format>
+            <sch:columns>Oid</sch:columns>
             <sch:action></sch:action>
             <sch:quoteDisplay>false</sch:quoteDisplay>
             <sch:description></sch:description>

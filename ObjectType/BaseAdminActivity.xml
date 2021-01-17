@@ -19,10 +19,10 @@
     <sch:bmfFields>
         <sch:BmfObjectField>
             <sch:name>Type</sch:name>
-            <sch:dataType>Char</sch:dataType>
+            <sch:dataType>Text</sch:dataType>
             <sch:enumName></sch:enumName>
             <sch:length>256</sch:length>
-            <sch:scale></sch:scale>
+            <sch:scale>0</sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
             <sch:calculated>false</sch:calculated>
             <sch:encrypted>false</sch:encrypted>
@@ -35,10 +35,10 @@
         </sch:BmfObjectField>
         <sch:BmfObjectField>
             <sch:name>Reason</sch:name>
-            <sch:dataType>Char</sch:dataType>
+            <sch:dataType>Text</sch:dataType>
             <sch:enumName></sch:enumName>
             <sch:length>256</sch:length>
-            <sch:scale></sch:scale>
+            <sch:scale>0</sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
             <sch:calculated>false</sch:calculated>
             <sch:encrypted>false</sch:encrypted>
@@ -51,10 +51,10 @@
         </sch:BmfObjectField>
         <sch:BmfObjectField>
             <sch:name>Description</sch:name>
-            <sch:dataType>Char</sch:dataType>
+            <sch:dataType>Text</sch:dataType>
             <sch:enumName></sch:enumName>
             <sch:length>256</sch:length>
-            <sch:scale></sch:scale>
+            <sch:scale>0</sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
             <sch:calculated>false</sch:calculated>
             <sch:encrypted>false</sch:encrypted>
@@ -67,10 +67,10 @@
         </sch:BmfObjectField>
         <sch:BmfObjectField>
             <sch:name>DataFile</sch:name>
-            <sch:dataType>Char</sch:dataType>
+            <sch:dataType>Text</sch:dataType>
             <sch:enumName></sch:enumName>
             <sch:length>256</sch:length>
-            <sch:scale></sch:scale>
+            <sch:scale>0</sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
             <sch:calculated>false</sch:calculated>
             <sch:encrypted>false</sch:encrypted>
@@ -85,8 +85,8 @@
             <sch:name>CreatedBy</sch:name>
             <sch:dataType>OID</sch:dataType>
             <sch:enumName></sch:enumName>
-            <sch:length></sch:length>
-            <sch:scale></sch:scale>
+            <sch:length>0</sch:length>
+            <sch:scale>0</sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
             <sch:calculated>false</sch:calculated>
             <sch:encrypted>false</sch:encrypted>
@@ -101,8 +101,8 @@
             <sch:name>CreatedOn</sch:name>
             <sch:dataType>DateTime</sch:dataType>
             <sch:enumName></sch:enumName>
-            <sch:length></sch:length>
-            <sch:scale></sch:scale>
+            <sch:length>0</sch:length>
+            <sch:scale>0</sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
             <sch:calculated>false</sch:calculated>
             <sch:encrypted>false</sch:encrypted>
@@ -117,8 +117,8 @@
             <sch:name>UpdatedBy</sch:name>
             <sch:dataType>OID</sch:dataType>
             <sch:enumName></sch:enumName>
-            <sch:length></sch:length>
-            <sch:scale></sch:scale>
+            <sch:length>0</sch:length>
+            <sch:scale>0</sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
             <sch:calculated>false</sch:calculated>
             <sch:encrypted>false</sch:encrypted>
@@ -133,8 +133,8 @@
             <sch:name>UpdatedOn</sch:name>
             <sch:dataType>DateTime</sch:dataType>
             <sch:enumName></sch:enumName>
-            <sch:length></sch:length>
-            <sch:scale></sch:scale>
+            <sch:length>0</sch:length>
+            <sch:scale>0</sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
             <sch:calculated>false</sch:calculated>
             <sch:encrypted>false</sch:encrypted>

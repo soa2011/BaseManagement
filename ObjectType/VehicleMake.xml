@@ -11,7 +11,7 @@
     <sch:baseTables></sch:baseTables>
     <sch:viewInfo></sch:viewInfo>
     <sch:hierarchyColumn></sch:hierarchyColumn>
-    <sch:description>厂牌信息（预设）</sch:description>
+    <sch:description></sch:description>
     <sch:aggrRoot>false</sch:aggrRoot>
     <sch:changeType></sch:changeType>
     <sch:changeFields></sch:changeFields>
@@ -19,65 +19,65 @@
     <sch:bmfFields>
         <sch:BmfObjectField>
             <sch:name>VehicleMakeCode</sch:name>
-            <sch:dataType>Char</sch:dataType>
+            <sch:dataType>Text</sch:dataType>
             <sch:enumName></sch:enumName>
             <sch:length>64</sch:length>
-            <sch:scale></sch:scale>
+            <sch:scale>0</sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
             <sch:calculated>false</sch:calculated>
             <sch:encrypted>false</sch:encrypted>
             <sch:seqStart>0</sch:seqStart>
             <sch:seqPattern></sch:seqPattern>
             <sch:calcExpr></sch:calcExpr>
-            <sch:description>厂牌编码（拉丁字母名称）</sch:description>
+            <sch:description></sch:description>
             <sch:changeType></sch:changeType>
             <sch:changeFields></sch:changeFields>
         </sch:BmfObjectField>
         <sch:BmfObjectField>
             <sch:name>VehicleMakeName</sch:name>
-            <sch:dataType>Char</sch:dataType>
+            <sch:dataType>Text</sch:dataType>
             <sch:enumName></sch:enumName>
             <sch:length>64</sch:length>
-            <sch:scale></sch:scale>
+            <sch:scale>0</sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
             <sch:calculated>false</sch:calculated>
             <sch:encrypted>false</sch:encrypted>
             <sch:seqStart>0</sch:seqStart>
             <sch:seqPattern></sch:seqPattern>
             <sch:calcExpr></sch:calcExpr>
-            <sch:description>厂牌名称</sch:description>
+            <sch:description></sch:description>
             <sch:changeType></sch:changeType>
             <sch:changeFields></sch:changeFields>
         </sch:BmfObjectField>
         <sch:BmfObjectField>
             <sch:name>VehicleClassName</sch:name>
-            <sch:dataType>Char</sch:dataType>
+            <sch:dataType>Text</sch:dataType>
             <sch:enumName></sch:enumName>
             <sch:length>512</sch:length>
-            <sch:scale></sch:scale>
+            <sch:scale>0</sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
             <sch:calculated>false</sch:calculated>
             <sch:encrypted>false</sch:encrypted>
             <sch:seqStart>0</sch:seqStart>
             <sch:seqPattern></sch:seqPattern>
             <sch:calcExpr></sch:calcExpr>
-            <sch:description>（大）车系名称列表(逗号分隔)</sch:description>
+            <sch:description></sch:description>
             <sch:changeType></sch:changeType>
             <sch:changeFields></sch:changeFields>
         </sch:BmfObjectField>
         <sch:BmfObjectField>
             <sch:name>LogoURL</sch:name>
-            <sch:dataType>Char</sch:dataType>
+            <sch:dataType>Text</sch:dataType>
             <sch:enumName></sch:enumName>
             <sch:length>256</sch:length>
-            <sch:scale></sch:scale>
+            <sch:scale>0</sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
             <sch:calculated>false</sch:calculated>
             <sch:encrypted>false</sch:encrypted>
             <sch:seqStart>0</sch:seqStart>
             <sch:seqPattern></sch:seqPattern>
             <sch:calcExpr></sch:calcExpr>
-            <sch:description>厂牌logo URL</sch:description>
+            <sch:description></sch:description>
             <sch:changeType></sch:changeType>
             <sch:changeFields></sch:changeFields>
         </sch:BmfObjectField>
@@ -85,8 +85,8 @@
             <sch:name>CreatedBy</sch:name>
             <sch:dataType>OID</sch:dataType>
             <sch:enumName></sch:enumName>
-            <sch:length></sch:length>
-            <sch:scale></sch:scale>
+            <sch:length>0</sch:length>
+            <sch:scale>0</sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
             <sch:calculated>false</sch:calculated>
             <sch:encrypted>false</sch:encrypted>
@@ -101,8 +101,8 @@
             <sch:name>CreatedOn</sch:name>
             <sch:dataType>DateTime</sch:dataType>
             <sch:enumName></sch:enumName>
-            <sch:length></sch:length>
-            <sch:scale></sch:scale>
+            <sch:length>0</sch:length>
+            <sch:scale>0</sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
             <sch:calculated>false</sch:calculated>
             <sch:encrypted>false</sch:encrypted>
@@ -117,8 +117,8 @@
             <sch:name>UpdatedBy</sch:name>
             <sch:dataType>OID</sch:dataType>
             <sch:enumName></sch:enumName>
-            <sch:length></sch:length>
-            <sch:scale></sch:scale>
+            <sch:length>0</sch:length>
+            <sch:scale>0</sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
             <sch:calculated>false</sch:calculated>
             <sch:encrypted>false</sch:encrypted>
@@ -133,8 +133,8 @@
             <sch:name>UpdatedOn</sch:name>
             <sch:dataType>DateTime</sch:dataType>
             <sch:enumName></sch:enumName>
-            <sch:length></sch:length>
-            <sch:scale></sch:scale>
+            <sch:length>0</sch:length>
+            <sch:scale>0</sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
             <sch:calculated>false</sch:calculated>
             <sch:encrypted>false</sch:encrypted>
