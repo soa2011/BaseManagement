@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<sch:BmfAppModel xmlns:sch="http://Baf.com/schemas" name="BaseManagement">
+    <sch:name>BaseManagement</sch:name>
+    <sch:aggrRootName>BaseManagement</sch:aggrRootName>
+    <sch:revision>1</sch:revision>
+    <sch:modelType>CUSTOM_MODEL</sch:modelType>
+    <sch:historyMode>NOT_SUPPORTED</sch:historyMode>
+    <sch:baseModel>BaseManagement</sch:baseModel>
+    <sch:modelLevel></sch:modelLevel>
+</sch:BmfAppModel>
