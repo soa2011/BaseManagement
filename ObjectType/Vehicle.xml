@@ -4,25 +4,36 @@
     <sch:tableType>System</sch:tableType>
     <sch:archeType>NORMAL</sch:archeType>
     <sch:parentTypeName>BaseManagement</sch:parentTypeName>
-    <sch:superTypeName></sch:superTypeName>
     <sch:accessMode>TableDirect</sch:accessMode>
     <sch:primaryField></sch:primaryField>
     <sch:primaryKey></sch:primaryKey>
     <sch:baseTables></sch:baseTables>
     <sch:viewInfo></sch:viewInfo>
     <sch:hierarchyColumn></sch:hierarchyColumn>
-    <sch:description></sch:description>
+    <sch:description>车辆信息</sch:description>
     <sch:aggrRoot>false</sch:aggrRoot>
     <sch:changeType></sch:changeType>
     <sch:changeFields></sch:changeFields>
-    <sch:bmfRelationships/>
+    <sch:bmfRelationships>
+        <sch:BmfObjectRelationship>
+            <sch:type>REF_TO_ONE</sch:type>
+            <sch:name>ClientId</sch:name>
+            <sch:displayName></sch:displayName>
+            <sch:description></sch:description>
+            <sch:relatedObjectType></sch:relatedObjectType>
+            <sch:joinField></sch:joinField>
+            <sch:lowerBound>0</sch:lowerBound>
+            <sch:upperBound>1</sch:upperBound>
+            <sch:containment>false</sch:containment>
+        </sch:BmfObjectRelationship>
+    </sch:bmfRelationships>
     <sch:bmfFields>
         <sch:BmfObjectField>
             <sch:name>LicenseNo</sch:name>
-            <sch:dataType>Text</sch:dataType>
+            <sch:dataType>Char</sch:dataType>
             <sch:enumName></sch:enumName>
             <sch:length>64</sch:length>
-            <sch:scale>0</sch:scale>
+            <sch:scale></sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
             <sch:calculated>false</sch:calculated>
             <sch:encrypted>false</sch:encrypted>
@@ -35,10 +46,10 @@
         </sch:BmfObjectField>
         <sch:BmfObjectField>
             <sch:name>EngineNo</sch:name>
-            <sch:dataType>Text</sch:dataType>
+            <sch:dataType>Char</sch:dataType>
             <sch:enumName></sch:enumName>
             <sch:length>24</sch:length>
-            <sch:scale>0</sch:scale>
+            <sch:scale></sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
             <sch:calculated>false</sch:calculated>
             <sch:encrypted>false</sch:encrypted>
@@ -51,10 +62,10 @@
         </sch:BmfObjectField>
         <sch:BmfObjectField>
             <sch:name>FrameNo</sch:name>
-            <sch:dataType>Text</sch:dataType>
+            <sch:dataType>Char</sch:dataType>
             <sch:enumName></sch:enumName>
             <sch:length>24</sch:length>
-            <sch:scale>0</sch:scale>
+            <sch:scale></sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
             <sch:calculated>false</sch:calculated>
             <sch:encrypted>false</sch:encrypted>
@@ -67,10 +78,10 @@
         </sch:BmfObjectField>
         <sch:BmfObjectField>
             <sch:name>ModelName</sch:name>
-            <sch:dataType>Text</sch:dataType>
+            <sch:dataType>Char</sch:dataType>
             <sch:enumName></sch:enumName>
             <sch:length>24</sch:length>
-            <sch:scale>0</sch:scale>
+            <sch:scale></sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
             <sch:calculated>false</sch:calculated>
             <sch:encrypted>false</sch:encrypted>
@@ -83,10 +94,10 @@
         </sch:BmfObjectField>
         <sch:BmfObjectField>
             <sch:name>ModelCode</sch:name>
-            <sch:dataType>Text</sch:dataType>
+            <sch:dataType>Char</sch:dataType>
             <sch:enumName></sch:enumName>
             <sch:length>24</sch:length>
-            <sch:scale>0</sch:scale>
+            <sch:scale></sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
             <sch:calculated>false</sch:calculated>
             <sch:encrypted>false</sch:encrypted>
@@ -131,23 +142,23 @@
         </sch:BmfObjectField>
         <sch:BmfObjectField>
             <sch:name>VehicleClassCode</sch:name>
-            <sch:dataType>Text</sch:dataType>
+            <sch:dataType>Char</sch:dataType>
             <sch:enumName></sch:enumName>
             <sch:length>24</sch:length>
-            <sch:scale>0</sch:scale>
+            <sch:scale></sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
             <sch:calculated>false</sch:calculated>
             <sch:encrypted>false</sch:encrypted>
             <sch:seqStart>0</sch:seqStart>
             <sch:seqPattern></sch:seqPattern>
             <sch:calcExpr></sch:calcExpr>
-            <sch:description></sch:description>
+            <sch:description>车型种类编码</sch:description>
             <sch:changeType></sch:changeType>
             <sch:changeFields></sch:changeFields>
         </sch:BmfObjectField>
         <sch:BmfObjectField>
             <sch:name>SeatCount</sch:name>
-            <sch:dataType>Int</sch:dataType>
+            <sch:dataType>Integer</sch:dataType>
             <sch:enumName></sch:enumName>
             <sch:length>10</sch:length>
             <sch:scale>4</sch:scale>
@@ -163,10 +174,10 @@
         </sch:BmfObjectField>
         <sch:BmfObjectField>
             <sch:name>FuelType</sch:name>
-            <sch:dataType>Text</sch:dataType>
+            <sch:dataType>Char</sch:dataType>
             <sch:enumName></sch:enumName>
             <sch:length>24</sch:length>
-            <sch:scale>0</sch:scale>
+            <sch:scale></sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
             <sch:calculated>false</sch:calculated>
             <sch:encrypted>false</sch:encrypted>
@@ -211,10 +222,10 @@
         </sch:BmfObjectField>
         <sch:BmfObjectField>
             <sch:name>TransferVehicleFlag</sch:name>
-            <sch:dataType>Text</sch:dataType>
+            <sch:dataType>Char</sch:dataType>
             <sch:enumName></sch:enumName>
             <sch:length>24</sch:length>
-            <sch:scale>0</sch:scale>
+            <sch:scale></sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
             <sch:calculated>false</sch:calculated>
             <sch:encrypted>false</sch:encrypted>
@@ -229,8 +240,8 @@
             <sch:name>TransferDate</sch:name>
             <sch:dataType>Date</sch:dataType>
             <sch:enumName></sch:enumName>
-            <sch:length>0</sch:length>
-            <sch:scale>0</sch:scale>
+            <sch:length></sch:length>
+            <sch:scale></sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
             <sch:calculated>false</sch:calculated>
             <sch:encrypted>false</sch:encrypted>
@@ -243,10 +254,10 @@
         </sch:BmfObjectField>
         <sch:BmfObjectField>
             <sch:name>RunAreaCode</sch:name>
-            <sch:dataType>Text</sch:dataType>
+            <sch:dataType>Char</sch:dataType>
             <sch:enumName></sch:enumName>
             <sch:length>24</sch:length>
-            <sch:scale>0</sch:scale>
+            <sch:scale></sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
             <sch:calculated>false</sch:calculated>
             <sch:encrypted>false</sch:encrypted>
@@ -259,10 +270,10 @@
         </sch:BmfObjectField>
         <sch:BmfObjectField>
             <sch:name>CarFairValue</sch:name>
-            <sch:dataType>Text</sch:dataType>
+            <sch:dataType>Char</sch:dataType>
             <sch:enumName></sch:enumName>
             <sch:length>24</sch:length>
-            <sch:scale>0</sch:scale>
+            <sch:scale></sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
             <sch:calculated>false</sch:calculated>
             <sch:encrypted>false</sch:encrypted>
@@ -275,10 +286,10 @@
         </sch:BmfObjectField>
         <sch:BmfObjectField>
             <sch:name>CertificateDateBJ</sch:name>
-            <sch:dataType>Text</sch:dataType>
+            <sch:dataType>Char</sch:dataType>
             <sch:enumName></sch:enumName>
             <sch:length>24</sch:length>
-            <sch:scale>0</sch:scale>
+            <sch:scale></sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
             <sch:calculated>false</sch:calculated>
             <sch:encrypted>false</sch:encrypted>
@@ -291,10 +302,10 @@
         </sch:BmfObjectField>
         <sch:BmfObjectField>
             <sch:name>CertificateType</sch:name>
-            <sch:dataType>Text</sch:dataType>
+            <sch:dataType>Char</sch:dataType>
             <sch:enumName></sch:enumName>
             <sch:length>24</sch:length>
-            <sch:scale>0</sch:scale>
+            <sch:scale></sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
             <sch:calculated>false</sch:calculated>
             <sch:encrypted>false</sch:encrypted>
@@ -307,10 +318,10 @@
         </sch:BmfObjectField>
         <sch:BmfObjectField>
             <sch:name>IndustryModelCode</sch:name>
-            <sch:dataType>Text</sch:dataType>
+            <sch:dataType>Char</sch:dataType>
             <sch:enumName></sch:enumName>
             <sch:length>24</sch:length>
-            <sch:scale>0</sch:scale>
+            <sch:scale></sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
             <sch:calculated>false</sch:calculated>
             <sch:encrypted>false</sch:encrypted>
@@ -323,10 +334,10 @@
         </sch:BmfObjectField>
         <sch:BmfObjectField>
             <sch:name>CheckNo</sch:name>
-            <sch:dataType>Text</sch:dataType>
+            <sch:dataType>Char</sch:dataType>
             <sch:enumName></sch:enumName>
             <sch:length>24</sch:length>
-            <sch:scale>0</sch:scale>
+            <sch:scale></sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
             <sch:calculated>false</sch:calculated>
             <sch:encrypted>false</sch:encrypted>
@@ -341,8 +352,8 @@
             <sch:name>CertificateDate</sch:name>
             <sch:dataType>Date</sch:dataType>
             <sch:enumName></sch:enumName>
-            <sch:length>0</sch:length>
-            <sch:scale>0</sch:scale>
+            <sch:length></sch:length>
+            <sch:scale></sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
             <sch:calculated>false</sch:calculated>
             <sch:encrypted>false</sch:encrypted>
@@ -355,10 +366,10 @@
         </sch:BmfObjectField>
         <sch:BmfObjectField>
             <sch:name>IsPrintModelAlias</sch:name>
-            <sch:dataType>Text</sch:dataType>
+            <sch:dataType>Char</sch:dataType>
             <sch:enumName></sch:enumName>
             <sch:length>24</sch:length>
-            <sch:scale>0</sch:scale>
+            <sch:scale></sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
             <sch:calculated>false</sch:calculated>
             <sch:encrypted>false</sch:encrypted>
@@ -371,10 +382,10 @@
         </sch:BmfObjectField>
         <sch:BmfObjectField>
             <sch:name>CertificateNo</sch:name>
-            <sch:dataType>Text</sch:dataType>
+            <sch:dataType>Char</sch:dataType>
             <sch:enumName></sch:enumName>
             <sch:length>24</sch:length>
-            <sch:scale>0</sch:scale>
+            <sch:scale></sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
             <sch:calculated>false</sch:calculated>
             <sch:encrypted>false</sch:encrypted>
@@ -389,8 +400,8 @@
             <sch:name>EnrollDate</sch:name>
             <sch:dataType>Date</sch:dataType>
             <sch:enumName></sch:enumName>
-            <sch:length>0</sch:length>
-            <sch:scale>0</sch:scale>
+            <sch:length></sch:length>
+            <sch:scale></sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
             <sch:calculated>false</sch:calculated>
             <sch:encrypted>false</sch:encrypted>
@@ -403,65 +414,65 @@
         </sch:BmfObjectField>
         <sch:BmfObjectField>
             <sch:name>VehicleStatus</sch:name>
-            <sch:dataType>Text</sch:dataType>
+            <sch:dataType>Char</sch:dataType>
             <sch:enumName></sch:enumName>
             <sch:length>32</sch:length>
-            <sch:scale>0</sch:scale>
+            <sch:scale></sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
             <sch:calculated>false</sch:calculated>
             <sch:encrypted>false</sch:encrypted>
             <sch:seqStart>0</sch:seqStart>
             <sch:seqPattern></sch:seqPattern>
             <sch:calcExpr></sch:calcExpr>
-            <sch:description></sch:description>
+            <sch:description>车辆状态</sch:description>
             <sch:changeType></sch:changeType>
             <sch:changeFields></sch:changeFields>
         </sch:BmfObjectField>
         <sch:BmfObjectField>
             <sch:name>BrandName</sch:name>
-            <sch:dataType>Text</sch:dataType>
+            <sch:dataType>Char</sch:dataType>
             <sch:enumName></sch:enumName>
             <sch:length>256</sch:length>
-            <sch:scale>0</sch:scale>
+            <sch:scale></sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
             <sch:calculated>false</sch:calculated>
             <sch:encrypted>false</sch:encrypted>
             <sch:seqStart>0</sch:seqStart>
             <sch:seqPattern></sch:seqPattern>
             <sch:calcExpr></sch:calcExpr>
-            <sch:description></sch:description>
+            <sch:description>车辆品牌名称</sch:description>
             <sch:changeType></sch:changeType>
             <sch:changeFields></sch:changeFields>
         </sch:BmfObjectField>
         <sch:BmfObjectField>
             <sch:name>FamilyName</sch:name>
-            <sch:dataType>Text</sch:dataType>
+            <sch:dataType>Char</sch:dataType>
             <sch:enumName></sch:enumName>
             <sch:length>256</sch:length>
-            <sch:scale>0</sch:scale>
+            <sch:scale></sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
             <sch:calculated>false</sch:calculated>
             <sch:encrypted>false</sch:encrypted>
             <sch:seqStart>0</sch:seqStart>
             <sch:seqPattern></sch:seqPattern>
             <sch:calcExpr></sch:calcExpr>
-            <sch:description></sch:description>
+            <sch:description>车系名称</sch:description>
             <sch:changeType></sch:changeType>
             <sch:changeFields></sch:changeFields>
         </sch:BmfObjectField>
         <sch:BmfObjectField>
             <sch:name>VehicleAlias</sch:name>
-            <sch:dataType>Text</sch:dataType>
+            <sch:dataType>Char</sch:dataType>
             <sch:enumName></sch:enumName>
             <sch:length>256</sch:length>
-            <sch:scale>0</sch:scale>
+            <sch:scale></sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
             <sch:calculated>false</sch:calculated>
             <sch:encrypted>false</sch:encrypted>
             <sch:seqStart>0</sch:seqStart>
             <sch:seqPattern></sch:seqPattern>
             <sch:calcExpr></sch:calcExpr>
-            <sch:description></sch:description>
+            <sch:description>车辆别名</sch:description>
             <sch:changeType></sch:changeType>
             <sch:changeFields></sch:changeFields>
         </sch:BmfObjectField>
@@ -469,8 +480,8 @@
             <sch:name>CreatedBy</sch:name>
             <sch:dataType>OID</sch:dataType>
             <sch:enumName></sch:enumName>
-            <sch:length>0</sch:length>
-            <sch:scale>0</sch:scale>
+            <sch:length></sch:length>
+            <sch:scale></sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
             <sch:calculated>false</sch:calculated>
             <sch:encrypted>false</sch:encrypted>
@@ -485,8 +496,8 @@
             <sch:name>CreatedOn</sch:name>
             <sch:dataType>DateTime</sch:dataType>
             <sch:enumName></sch:enumName>
-            <sch:length>0</sch:length>
-            <sch:scale>0</sch:scale>
+            <sch:length></sch:length>
+            <sch:scale></sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
             <sch:calculated>false</sch:calculated>
             <sch:encrypted>false</sch:encrypted>
@@ -501,8 +512,8 @@
             <sch:name>UpdatedBy</sch:name>
             <sch:dataType>OID</sch:dataType>
             <sch:enumName></sch:enumName>
-            <sch:length>0</sch:length>
-            <sch:scale>0</sch:scale>
+            <sch:length></sch:length>
+            <sch:scale></sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
             <sch:calculated>false</sch:calculated>
             <sch:encrypted>false</sch:encrypted>
@@ -517,8 +528,8 @@
             <sch:name>UpdatedOn</sch:name>
             <sch:dataType>DateTime</sch:dataType>
             <sch:enumName></sch:enumName>
-            <sch:length>0</sch:length>
-            <sch:scale>0</sch:scale>
+            <sch:length></sch:length>
+            <sch:scale></sch:scale>
             <sch:autoIncrement>false</sch:autoIncrement>
             <sch:calculated>false</sch:calculated>
             <sch:encrypted>false</sch:encrypted>
